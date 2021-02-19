@@ -5,7 +5,6 @@ public class Rectangle extends Shape{
     protected double width;
     protected double height;
 
-    public Rectangle() {}
     public Rectangle(double width, double height){
         System.out.println("I am a rectangle");
         this.width = width;

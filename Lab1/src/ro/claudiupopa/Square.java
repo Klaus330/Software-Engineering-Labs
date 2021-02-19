@@ -4,7 +4,7 @@ public class Square extends Rectangle{
     protected double side;
 
     public Square(double side){
-        super();
+        super(side,side);
         this.side = side;
     }
 
