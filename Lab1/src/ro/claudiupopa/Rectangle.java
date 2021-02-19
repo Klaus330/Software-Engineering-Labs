@@ -1,5 +1,8 @@
 package ro.claudiupopa;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class Rectangle extends Shape{
 
     protected double width;
@@ -31,10 +34,15 @@ public class Rectangle extends Shape{
 
 
     public Triangle[] splitIntoTriangles(){
+        int n = (int) (Math.random() * 10);
 
+        Triangle[] triangles = new Triangle[n];
 
+        for(int i=0; i<n; i++){
+            triangles[i] = new Triangle((width/n)*(i+0.5), height/2);
+        }
 
-        return new Triangle[2];
+        return triangles;
     }
 
 }
