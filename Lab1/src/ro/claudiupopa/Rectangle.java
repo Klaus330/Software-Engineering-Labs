@@ -29,17 +29,17 @@ public class Rectangle extends Shape{
 
     @Override
     public double computeArea() {
-        return width*height;
+        return width * height;
     }
 
 
     public Triangle[] splitIntoTriangles(){
         int n = (int) (Math.random() * 10);
-
+        System.out.println("This is: " +  n);
         Triangle[] triangles = new Triangle[n];
 
-        for(int i=0; i<n; i++){
-            triangles[i] = new Triangle((width/n)*(i+0.5), height/2);
+        for(int i = 0; i < n; i++){
+            triangles[i] = new Triangle(width/(n * (i + 0.5) ), height/2);
         }
 
         return triangles;

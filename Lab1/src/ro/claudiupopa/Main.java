@@ -25,5 +25,11 @@ public class Main {
 
 		Rectangle rec = new Rectangle(s);
 		System.out.println(rec.computeArea());
+
+		Triangle[] triangles = rec.splitIntoTriangles();
+		System.out.println("We split rectangle in: " + triangles.length);
+		for( int i = 0; i < triangles.length; i++) {
+			System.out.println("Triangle " + i + ": " + triangles[i].computeArea());
+		}
     }
 }
