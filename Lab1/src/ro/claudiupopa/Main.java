@@ -26,10 +26,12 @@ public class Main {
 		Rectangle rec = new Rectangle(s);
 		System.out.println(rec.computeArea());
 
-		Triangle[] triangles = rec.splitIntoTriangles();
+		Triangle[] triangles = r.splitIntoTriangles();
 		System.out.println("We split rectangle in: " + triangles.length);
 		for( int i = 0; i < triangles.length; i++) {
 			System.out.println("Triangle " + i + ": " + triangles[i].computeArea());
 		}
+		double Aria = (double) triangles[0].computeArea() * triangles.length * 4;
+		System.out.println(Aria);
     }
 }
